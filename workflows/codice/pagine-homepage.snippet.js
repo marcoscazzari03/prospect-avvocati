@@ -28,7 +28,7 @@ const rendiAssoluto = (href) => {
 const categoria = (url) => {
   const u = String(url).toLowerCase().split('?')[0].split('#')[0];
   if (/contact|kontakt|contacto|contato|contatti|contacte|get-in-touch|reach-us|enquir|inquir|epikoinonia|yhteys|kapcsolat|elerhetoseg|hubungi|find-us|location|where-we-are|donde-estamos|onde-estamos|biuro|ufficio|oficina/.test(u)) return ['CONTATTI', 100];
-  if (/impressum|aviso-legal|avisolegal|nota-legal|legal-notice|legal-notices|mentions-legales|mentions|colofon|disclaimer|legal|privacy|privacidad|privacidade|polityka|rodo|datenschutz|gdpr|cookies?-policy|terms|terminos|termos|ochrana-osobnich|adatvedelem|integritet|tietosuoja/.test(u)) return ['LEGALE', 80];
+  if (/impressum|impresszum|aviso-legal|avisolegal|nota-legal|legal-notice|legal-notices|mentions-legales|mentions|colofon|disclaimer|legal|privacy|privacidad|privacidade|polityka|rodo|datenschutz|gdpr|cookies?-policy|terms|terminos|termos|ochrana-osobnich|adatvedelem|integritet|tietosuoja/.test(u)) return ['LEGALE', 80];
   if (/about|chi-siamo|quienes-somos|quem-somos|over-ons|o-nas|uber-uns|ueber-uns|qui-sommes|despacho|kancelaria|kanzlei|firm|studio/.test(u)) return ['STUDIO', 60];
   if (/team|equipo|equipa|abogados|advogados|lawyers|people|attorneys|solicitors|advocaten|avocats|anwalte|anwaelte|zespol|nasi|socios|partners|tym/.test(u)) return ['TEAM', 50];
   return ['', 0];
@@ -41,9 +41,11 @@ while ((m = hrefRegex.exec(html)) !== null) {
   const url = rendiAssoluto(m[1]);
   const h = cleanHost(url);
   if (!url || !h || !dominio || !(h === dominio || h.endsWith('.' + dominio))) continue;
-  if (/\.(pdf|jpe?g|png|gif|svg|webp|docx?|zip)$/i.test(url.split('?')[0])) continue;
+  const percorso = url.split('?')[0].split('#')[0];
+  if (/\.(pdf|jpe?g|png|gif|svg|webp|docx?|zip|css|js|xml|json|ico)$/i.test(percorso)) continue;
+  if (/\/(wp-content|wp-includes|wp-json|feed|news|blog|uutiset|nyheter|noticias|aktualnosci|hirek|insights|articles?|cdn-cgi)(\/|$)/i.test(percorso)) continue;
   if (normalizeUrl(url) === homeNorm) continue;
-  linkTrovati.push(url);
+  linkTrovati.push(url.split('#')[0]);
 }
 
 const candidate = [...new Set(linkTrovati)]
@@ -64,8 +66,11 @@ if (!candidate.length && origin) {
     'Paesi Bassi': ['/contact', '/colofon'], 'Belgio': ['/contact', '/mentions-legales'],
     'Austria': ['/kontakt', '/impressum'], 'Svizzera': ['/kontakt', '/impressum'], 'Liechtenstein': ['/kontakt', '/impressum'],
     'Polonia': ['/kontakt', '/polityka-prywatnosci'], 'Repubblica Ceca': ['/kontakt', '/kontakty'],
-    'Slovacchia': ['/kontakt', '/kontakty'], 'Svezia': ['/kontakt', '/om-oss'], 'Danimarca': ['/kontakt', '/om-os'],
-    'Norvegia': ['/kontakt', '/om-oss'], 'Ungheria': ['/kapcsolat', '/elerhetoseg'], 'Romania': ['/contact', '/despre-noi'],
+    'Slovacchia': ['/kontakt', '/kontakty'], 'Svezia': ['/kontakt', '/integritetspolicy'], 'Danimarca': ['/kontakt', '/om-os'],
+    'Norvegia': ['/kontakt', '/om-oss'], 'Ungheria': ['/kapcsolat', '/impresszum'], 'Romania': ['/contact', '/despre-noi'],
+    'Finlandia': ['/yhteystiedot', '/tietosuojaseloste'], 'Regno Unito': ['/contact-us', '/privacy-policy'],
+    'Irlanda': ['/contact-us', '/privacy-policy'], 'Grecia': ['/epikoinonia', '/contact'], 'Croazia': ['/kontakt', '/impressum'],
+    'Slovenia': ['/kontakt', '/o-nas'], 'Serbia': ['/kontakt', '/o-nama'],
     'Lussemburgo': ['/contact', '/mentions-legales'], 'Monaco': ['/contact', '/mentions-legales']
   }[p] || ['/contact', '/contact-us'];
   ipotesi.forEach((path, k) => candidate.push({ url: origin + path, cat: 'IPOTESI', score: 1 - k / 10 }));

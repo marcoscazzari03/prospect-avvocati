@@ -12,7 +12,9 @@ const leggiIstantanea = node({
     name: 'GitHub - Istantanea workflow',
     position: [220, 0],
     parameters: {
-      url: 'https://raw.githubusercontent.com/marcoscazzari03/prospect-avvocati/claude/confident-maxwell-wcy0xf/workflows/prospect-avvocati-search.json',
+      url: 'https://api.github.com/repos/marcoscazzari03/prospect-avvocati/contents/workflows/prospect-avvocati-search.json?ref=claude/confident-maxwell-wcy0xf',
+      sendHeaders: true,
+      headerParameters: { parameters: [{ name: 'Accept', value: 'application/vnd.github.raw+json' }, { name: 'User-Agent', value: 'n8n-prospect-avvocati' }] },
       options: { response: { response: { responseFormat: 'json' } } }
     }
   },

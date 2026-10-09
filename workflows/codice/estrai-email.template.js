@@ -82,7 +82,7 @@ const GENERICHE = new Set([
   'sekretariat', 'sekretariaat', 'secretary', 'reception', 'recepcion', 'receptie', 'enquiries', 'enquiry',
   'inquiries', 'inquiry', 'general', 'geral', 'administracion', 'administracao', 'administration', 'administratie', 'recepcja', 'despacho', 'bufete', 'abogados', 'advogados', 'advocaten',
   'avocats', 'avocat', 'cabinet', 'kanzlei', 'kancelaria', 'biuro', 'kancelar', 'kancelarija', 'ured', 'pisarna',
-  'iroda', 'office1', 'law', 'legal', 'lawyers', 'solicitors', 'criminal', 'crime', 'defence', 'defense',
+  'iroda', 'ugyved', 'ugyvediiroda', 'web', 'kontor', 'advokatbyra', 'office1', 'law', 'legal', 'lawyers', 'solicitors', 'criminal', 'crime', 'defence', 'defense',
   'penal', 'strafrecht', 'advokat', 'advokatfirma', 'byra', 'toimisto', 'mailbox', 'studio', 'studiolegale'
 ]);
 const PRIVACY = /^(privacy|dpo|gdpr|rodo|datenschutz|dataprotection|data\.protection|protecciondedatos|lopd|rgpd|avg)$/;
@@ -93,6 +93,9 @@ const parti = String(prospect.Nome ?? '').normalize('NFKD').replace(/[̀-ͯ]/g, 
   .split(/[\s-]+/).map(p => p.replace(/[^a-z]/g, '')).filter(p => p && !titoli.has(p));
 const primo = parti[0] || '';
 const ultimo = parti.length > 1 ? parti[parti.length - 1] : '';
+
+// Segnaposto tipo "nome.cognome@" nelle varie lingue.
+const SEGNAPOSTO = /^(firstname|first\.?name|name|nome|nombre|prenom|vorname|voornaam|imie|jmeno|etunimi|fornamn|fornavn)[._-]?(lastname|last\.?name|surname|cognome|apellidos?|nom|nachname|achternaam|nazwisko|prijmeni|sukunimi|efternamn|etternavn)?$/;
 
 const conNome = (local) => {
   const l = local.replace(/[^a-z]/g, '');
@@ -108,8 +111,14 @@ const punteggio = (email) => {
   if (!local || !dom || SCARTA_LOCALI.test(local) || SCARTA_DOMINI.test(dom) || ESTENSIONI.test(email)) return 0;
   if (dom.startsWith('www.')) return 0;
   const delDominio = dominio && (dom === dominio || dom.endsWith('.' + dominio));
+  if (SEGNAPOSTO.test(local)) return 0;
   if (delDominio) {
-    if (conNome(local)) return 5;
+    if (conNome(local)) {
+      // Stesso cognome ma un altro nome (es. un familiare nello studio): non e il titolare.
+      const altroNome = local.split(/[._-]+/).some(t =>
+        /^[a-z]{3,}$/.test(t) && !parti.some(p => p === t || t.includes(p) || p.includes(t)));
+      return altroNome ? 3 : 5;
+    }
     if (GENERICHE.has(local)) return 4;
     if (PRIVACY.test(local)) return 1;
     return 3;
