@@ -1,0 +1,70 @@
+ID,Paese,Settore,Tema,Attivo
+UK01,Regno Unito,Diritto penale,"criminal defence solicitors and law firms in London (independent firms, not national chains)",SI
+UK02,Regno Unito,Diritto penale,"white-collar crime, fraud, bribery and regulatory investigations boutique law firms in London",SI
+UK03,Regno Unito,Diritto penale,"criminal defence solicitors in Manchester, Liverpool and North West England",SI
+UK04,Regno Unito,Diritto penale,"criminal defence solicitors in Birmingham, Leicester, Nottingham and the Midlands",SI
+UK05,Regno Unito,Diritto penale,"criminal defence solicitors in Leeds, Sheffield, Newcastle and Yorkshire / North East",SI
+UK06,Regno Unito,Diritto penale,"criminal defence solicitors in Bristol, Cardiff, the South West and Wales",SI
+UK07,Regno Unito,Diritto penale,"criminal defence solicitors in the South East, Kent, Sussex, Essex and East Anglia",SI
+UK08,Regno Unito,Diritto penale,"criminal defence solicitors and solicitor-advocates in Scotland (Glasgow, Edinburgh, Aberdeen)",SI
+UK09,Regno Unito,Diritto penale,"criminal defence solicitors in Northern Ireland (Belfast, Derry)",SI
+UK10,Regno Unito,Diritto penale,"extradition, serious crime, motoring offences and sexual offences defence specialist firms",SI
+IE01,Irlanda,Diritto penale,"criminal defence solicitors in Dublin (independent practices)",SI
+IE02,Irlanda,Diritto penale,"criminal defence solicitors in Cork, Limerick, Galway and the rest of Ireland",SI
+ES01,Spagna,Diritto penale,"abogados penalistas y despachos de derecho penal en Madrid",SI
+ES02,Spagna,Diritto penale,"abogados penalistas y despachos de derecho penal en Barcelona y Cataluña",SI
+ES03,Spagna,Diritto penale,"abogados penalistas en Valencia, Alicante, Murcia y Baleares",SI
+ES04,Spagna,Diritto penale,"abogados penalistas en Sevilla, Málaga, Granada y Andalucía",SI
+ES05,Spagna,Diritto penale,"abogados penalistas en Bilbao, San Sebastián, Zaragoza, Asturias y Galicia",SI
+ES06,Spagna,Diritto penale,"despachos boutique de derecho penal económico y compliance penal (delitos societarios, blanqueo)",SI
+ES07,Spagna,Diritto penale,"abogados penalistas en Valladolid, Castilla, Extremadura y Canarias",SI
+PT01,Portogallo,Diritto penale,"advogados de direito penal / advogado criminalista em Lisboa",SI
+PT02,Portogallo,Diritto penale,"advogados de direito penal / advogado criminalista no Porto e norte de Portugal",SI
+PT03,Portogallo,Diritto penale,"advogados de direito penal em Coimbra, Braga, Faro e resto de Portugal; direito penal económico",SI
+NL01,Paesi Bassi,Diritto penale,"strafrechtadvocaten en strafrechtadvocatenkantoren in Amsterdam",SI
+NL02,Paesi Bassi,Diritto penale,"strafrechtadvocaten in Rotterdam, Den Haag en Utrecht",SI
+NL03,Paesi Bassi,Diritto penale,"strafrechtadvocaten in Eindhoven, Groningen, Arnhem, Maastricht; fraude en financieel strafrecht",SI
+BE01,Belgio,Diritto penale,"avocats pénalistes / strafrechtadvocaten à Bruxelles",SI
+BE02,Belgio,Diritto penale,"strafrechtadvocaten in Antwerpen, Gent en Vlaanderen",SI
+BE03,Belgio,Diritto penale,"avocats en droit pénal à Liège, Namur, Charleroi et en Wallonie",SI
+LU01,Lussemburgo,Diritto penale,"avocats pénalistes et droit pénal des affaires au Luxembourg (cabinets indépendants)",SI
+CH01,Svizzera,Diritto penale,"Strafverteidiger und Anwaltskanzleien für Strafrecht in Zürich, Basel und Bern",SI
+CH02,Svizzera,Diritto penale,"avocats pénalistes à Genève, Lausanne et en Suisse romande",SI
+CH03,Svizzera,Diritto penale,"avvocati penalisti in Ticino (Lugano, Bellinzona, Locarno) e Wirtschaftsstrafrecht Schweiz",SI
+AT01,Austria,Diritto penale,"Strafverteidiger und Rechtsanwälte für Strafrecht in Wien",SI
+AT02,Austria,Diritto penale,"Strafverteidiger in Graz, Linz, Salzburg, Innsbruck und Wirtschaftsstrafrecht Österreich",SI
+PL01,Polonia,Diritto penale,"adwokat karnista i kancelarie prawa karnego w Warszawie",SI
+PL02,Polonia,Diritto penale,"adwokat karnista w Krakowie, Katowicach i na południu Polski",SI
+PL03,Polonia,Diritto penale,"adwokat karnista we Wrocławiu, Poznaniu, Gdańsku i Szczecinie",SI
+PL04,Polonia,Diritto penale,"adwokat karnista w Łodzi, Lublinie, Białymstoku; karne gospodarcze i karnoskarbowe",SI
+CZ01,Repubblica Ceca,Diritto penale,"advokát pro trestní právo / trestní obhájce v Praze",SI
+CZ02,Repubblica Ceca,Diritto penale,"trestní obhájce v Brně, Ostravě, Plzni a dalších městech",SI
+SK01,Slovacchia,Diritto penale,"advokát trestné právo / trestný obhajca v Bratislave a Košiciach",SI
+HU01,Ungheria,Diritto penale,"büntetőjogi ügyvéd / büntető védő Budapesten",SI
+HU02,Ungheria,Diritto penale,"büntetőjogi ügyvéd Debrecenben, Szegeden, Pécsen, Győrben",SI
+RO01,Romania,Diritto penale,"avocat drept penal / avocat penalist București",SI
+RO02,Romania,Diritto penale,"avocat penalist Cluj-Napoca, Timișoara, Iași, Brașov, Constanța",SI
+RO03,Romania,Diritto penale,"avocați specializați în drept penal al afacerilor, evaziune fiscală, DNA/DIICOT",SI
+BG01,Bulgaria,Diritto penale,"адвокат по наказателно право (criminal defence lawyer) in Sofia, Plovdiv, Varna",SI
+GR01,Grecia,Diritto penale,"ποινικολόγος δικηγόρος (criminal lawyer) in Athens / Αθήνα",SI
+GR02,Grecia,Diritto penale,"ποινικολόγος δικηγόρος in Thessaloniki, Patras, Heraklion",SI
+CY01,Cipro,Diritto penale,"criminal defence lawyers and law offices in Nicosia, Limassol, Larnaca, Paphos",SI
+MT01,Malta,Diritto penale,"criminal lawyers and advocates in Malta and Gozo",SI
+HR01,Croazia,Diritto penale,"odvjetnik za kazneno pravo in Zagreb, Split, Rijeka, Osijek",SI
+SI01,Slovenia,Diritto penale,"odvetnik za kazensko pravo in Ljubljana and Maribor",SI
+RS01,Serbia,Diritto penale,"advokat za krivično pravo in Belgrade (Beograd), Novi Sad, Niš",SI
+BA01,Bosnia ed Erzegovina,Diritto penale,"advokat za krivično pravo in Sarajevo, Banja Luka, Mostar",SI
+ME01,Montenegro,Diritto penale,"advokat za krivično pravo in Podgorica, Budva, Bar",SI
+MK01,Macedonia del Nord,Diritto penale,"criminal defence lawyers (адвокат кривично право) in Skopje",SI
+AL01,Albania,Diritto penale,"avokat penal / criminal lawyers in Tirana and Durrës",SI
+SE01,Svezia,Diritto penale,"brottmålsadvokater och advokatbyråer för brottmål i Stockholm",SI
+SE02,Svezia,Diritto penale,"brottmålsadvokater i Göteborg, Malmö, Uppsala och resten av Sverige",SI
+DK01,Danimarca,Diritto penale,"forsvarsadvokater og strafferetsadvokater i København, Aarhus, Odense",SI
+NO01,Norvegia,Diritto penale,"forsvarsadvokater og strafferett advokatkontor i Oslo, Bergen, Trondheim, Stavanger",SI
+FI01,Finlandia,Diritto penale,"rikosasianajaja / rikosoikeuden asianajotoimisto Helsinki, Tampere, Turku, Oulu",SI
+EE01,Estonia,Diritto penale,"kriminaalõiguse advokaat / criminal defence lawyers in Tallinn and Tartu",SI
+LV01,Lettonia,Diritto penale,"krimināltiesību advokāts / criminal defence lawyers in Riga",SI
+LT01,Lituania,Diritto penale,"baudžiamosios teisės advokatas / criminal defence lawyers in Vilnius, Kaunas, Klaipėda",SI
+IS01,Islanda,Diritto penale,"criminal defence lawyers (verjandi, lögmaður sakamál) in Reykjavík",SI
+MC01,Monaco,Diritto penale,"avocats pénalistes à Monaco",SI
+LI01,Liechtenstein,Diritto penale,"Strafverteidiger und Rechtsanwälte für Strafrecht in Liechtenstein (Vaduz)",SI
