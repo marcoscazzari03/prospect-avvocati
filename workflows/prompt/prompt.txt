@@ -1,0 +1,87 @@
+=Cerca sul web fino a {{ $json.target_lotto }} AVVOCATI PENALISTI NUOVI in {{ $json.paese }}, come prospect commerciali per Le Fonti Awards.
+
+LOTTO: {{ $json.lotto }}
+FOCUS DEL LOTTO: {{ $json.tema }}
+
+CHI CERCHIAMO
+
+Avvocati che esercitano davvero il diritto penale (difesa penale, penale d'impresa / white-collar, reati economici e tributari, frodi, corruzione, antiriciclaggio, reati informatici, estradizione, reati stradali, compliance penale).
+
+Per ogni studio indica UNA sola persona, il titolare:
+
+* studio individuale: l'avvocato stesso;
+* studio con più avvocati: il fondatore, il socio fondatore, il managing partner, il senior partner o il socio che dà il nome allo studio (name partner).
+
+NON indicare associati, praticanti, collaboratori, of counsel, assistenti o personale amministrativo.
+
+STUDI DA PRIVILEGIARE
+
+* studi individuali e boutique specializzati in penale;
+* studi piccoli e medi indipendenti in cui il penale è un'area principale;
+* studi con sito ufficiale che mostra i contatti (email, pagina contatti, note legali / Impressum).
+
+DA EVITARE
+
+* grandi studi internazionali e grandi studi nazionali (Magic Circle, AmLaw, top 10 nazionali), Big Four;
+* barrister chambers del Regno Unito come entità (va bene però un singolo barrister con sito proprio);
+* avvocati senza un sito ufficiale proprio o dello studio;
+* pubblici ministeri, giudici, docenti, enti pubblici, ordini forensi, associazioni;
+* persone in pensione o studi chiusi.
+
+SITO UFFICIALE OBBLIGATORIO
+
+"sito" deve essere il sito dello studio o dell'avvocato (dominio proprio).
+NON sono siti ufficiali: LinkedIn, Facebook, Instagram, Google Maps, directory di avvocati (Legal 500, Chambers, Doyle's, Best Lawyers, abogados365, avvo, lawyers.com, albi dell'ordine), pagine gialle, articoli, marketplace.
+Usa directory e albi solo per SCOPRIRE i nomi, poi trova il sito ufficiale.
+Se non trovi il sito ufficiale, scarta il candidato e passa al successivo.
+
+PAGINA CONTATTI
+
+Se durante la ricerca vedi la pagina del sito ufficiale con i contatti (contatti / contact / kontakt / contacto / impressum / aviso legal / note legali), mettila in "pagina_contatti". Non fare ricerche apposta solo per trovarla e NON cercare email.
+
+METODO
+
+Usa davvero la ricerca web, in modo ampio e veloce: privilegia la quantità.
+Cerca anche nella lingua del paese (es. "abogado penalista", "advogado criminalista", "strafrechtadvocaat", "Strafverteidiger", "adwokat karnista", "brottmålsadvokat").
+Fonti utili per scoprire nomi: albi e motori di ricerca degli ordini forensi, directory di avvocati, classifiche, articoli su processi, siti degli studi.
+Non approfondire un candidato quando hai già: persona reale, ruolo da titolare plausibile, studio reale, sito ufficiale, una fonte.
+
+Non inventare mai persone, studi, ruoli, siti o URL.
+Non inserire due persone dello stesso studio.
+
+OUTPUT
+
+Restituisci ESCLUSIVAMENTE JSON valido, senza Markdown e senza testo prima o dopo:
+
+{
+"candidati": [
+{
+  "nome": "",
+  "nome_proprio": "",
+  "cognome": "",
+  "azienda": "",
+  "ruolo": "",
+  "tipo_studio": "individuale",
+  "citta": "",
+  "settore": "Diritto penale",
+  "sito": "https://...",
+  "pagina_contatti": "",
+  "fonte": "https://..."
+}
+]
+}
+
+REGOLE OUTPUT
+
+* "nome": nome completo della persona come appare nelle fonti, senza titoli (Dr., Avv., Lic., Mgr., Me, KC...).
+* "nome_proprio" e "cognome": nome e cognome reali (per i doppi cognomi spagnoli e portoghesi metti entrambi in "cognome").
+* "azienda": nome dello studio (per lo studio individuale, il nome con cui l'avvocato si presenta).
+* "ruolo": es. Founder, Founding Partner, Managing Partner, Senior Partner, Owner, Sole Practitioner, Abogado titular.
+* "tipo_studio": "individuale" oppure "associato".
+* "citta": città dell'ufficio principale.
+* "settore": "Diritto penale" oppure la specializzazione (es. "Diritto penale dell'economia").
+* "sito": URL del sito UFFICIALE. Obbligatorio.
+* "pagina_contatti": URL della pagina contatti / note legali sul sito ufficiale, oppure "".
+* "fonte": URL della fonte che conferma persona e ruolo.
+
+Cerca di arrivare a {{ $json.target_lotto }} candidati. Se ne trovi meno, restituisci solo quelli reali.
