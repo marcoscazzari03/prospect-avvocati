@@ -51,7 +51,14 @@ Legenda: ✅ fatto · 🔄 in corso · ⏳ da fare · 💡 idea da valutare
 
 ## Fase 3: Misura 🔄
 
-- 🔄 Prima esecuzione manuale di verifica (vedi Misure).
+- ✅ Prima esecuzione manuale di verifica (3475, vedi Misure): 75 salvati su 101 nuovi, **74% di email gratis dal sito**, 0 lotti falliti, durata 8 min.
+- ✅ Correzioni dopo la 3475:
+  - scartate le email segnaposto ("etunimi.sukunimi@", "firstname.lastname@"…);
+  - un'email con lo stesso cognome ma un altro nome (es. un familiare nello studio) non conta più come nominativa;
+  - la pagina 2 / 3 non punta più a feed, CSS, news o ancore della homepage; percorsi tipici aggiunti per Finlandia, Regno Unito, Irlanda, Ungheria (impresszum), Grecia, Balcani;
+  - riconosciute come generiche anche ugyved@, web@, kontor@, advokatbyra@.
+- ⏳ **RocketReach sugli avvocati:** nella 3475 **0 email su 26 ricerche** (20 persone non trovate, 6 senza email valida). Dopo 2–3 esecuzioni, se resta così, spegnere RocketReach (o tenerlo solo per Regno Unito / Irlanda) e far finire gli altri direttamente negli Scartati: costo RocketReach a zero.
+- ⏳ Gli scartati senza email (26 nella 3475) sono soprattutto siti fatti con costruttori in JavaScript o con solo il modulo di contatto: valutare se vale la pena un servizio di rendering (a pagamento) o accettare la perdita.
 - ⏳ Dopo 4–6 esecuzioni guardare nel Log:
   - % di email dal sito e quota di email nominative;
   - email RocketReach / ricerche RocketReach, per paese (Scartati + Prospect AI hanno la colonna Paese);
@@ -78,3 +85,4 @@ Legenda: ✅ fatto · 🔄 in corso · ⏳ da fare · 💡 idea da valutare
 
 | Data | Esecuzione | Candidati AI | Nuovi | Email da sito (nominative) | Email RocketReach | Salvati | Scartati | Costo | Note |
 |---|---|---|---|---|---|---|---|---|---|
+| 2026-10-09 | 3475 | 103 | 101 (98%) | 75 (24 nominative, 44 generiche, 7 altre) | 0 / 26 ricerche | **75** | 26 | non misurato (prompt più corto del base, ~0,3 $ stimati) | Prima esecuzione, archivio vuoto. Temi: SE01, FI01, IE02, UK07, HU02. Salvati: Svezia 21/25, Irlanda 19/23, Finlandia 13/22, Regno Unito 12/17, Ungheria 10/14. 67 studi associati, 34 individuali. Durata 8 min. |

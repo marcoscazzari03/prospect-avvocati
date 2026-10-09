@@ -68,6 +68,6 @@ Il file Google ha sei schede (stesse del workflow base, con qualche colonna in p
 1. Modificare `workflows/codice/`, `workflows/prompt/` o `workflows/build.py`.
 2. `python3 workflows/build.py` per rigenerare `workflows/prospect-avvocati-search.json`.
 3. Commit e push.
-4. Su n8n eseguire **Prospect Avvocati \| Deploy da GitHub**: copia l'istantanea nel workflow. I gruppi di nodi (riquadri sul canvas) non passano dall'API e vanno reimpostati a parte.
+4. Su n8n eseguire **Prospect Avvocati \| Deploy da GitHub**: copia l'istantanea nel workflow. I gruppi di nodi (riquadri sul canvas) restano quelli già presenti su n8n: se se ne aggiungono, vanno impostati a parte.
 
 Se invece si modifica il workflow direttamente su n8n, riportare la modifica nei file sorgente, altrimenti il deploy successivo la cancella.
