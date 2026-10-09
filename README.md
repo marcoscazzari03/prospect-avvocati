@@ -20,7 +20,7 @@ La roadmap con lo stato dei lavori e i prossimi passi è in [ROADMAP.md](ROADMAP
 
 | | Test |
 |---|---|
-| Workflow n8n | **Prospect Avvocati \| Search** (`rKUcaJepe2momTLB`), **non attivo**. Quando verrà attivato: 06:00 e 18:00 (ora italiana) |
+| Workflow n8n | **Prospect Avvocati \| Search** (`rKUcaJepe2momTLB`), **attivo dal 9 ottobre 2026**, 06:00 e 18:00 (ora italiana) |
 | Google Sheets | **TEST \| Prospect Avvocati \| Search** (`1g0XfNM3vj5icNmfeEROydjFKHERVh5jqgRPo_nHO0Bs`, account `ads.lefonti@gmail.com`) |
 | Monitor | nessuno |
 | Workflow di servizio | **Prospect Avvocati \| Setup foglio** (`wzJfijNP6pvbBDJ3`, già eseguito: non rilanciarlo, crea un file nuovo) · **Prospect Avvocati \| Deploy da GitHub** (`ukFESbZg52G35hja`) |

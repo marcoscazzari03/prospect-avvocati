@@ -9,7 +9,7 @@ Legenda: ✅ fatto · 🔄 in corso · ⏳ da fare · 💡 idea da valutare
 
 ## 📌 Da ricordare
 
-- Il workflow è **non attivo**: gira solo a mano finché non decidiamo di attivarlo (06:00 e 18:00).
+- Dal 9 ottobre 2026 il workflow è **attivo** e gira da solo alle **06:00 e 18:00**.
 - **Regola pratica RocketReach:** non lanciare esecuzioni a meno di un'ora da Singapore A/B/C (00:00, 12:00) e da Prospect | Search (03:00, 15:00): stesso account, circa 70 ricerche l'ora.
 - Il workflow "Setup foglio" è già stato eseguito: **non rilanciarlo** (creerebbe un secondo file).
 
@@ -63,7 +63,7 @@ Legenda: ✅ fatto · 🔄 in corso · ⏳ da fare · 💡 idea da valutare
   - % di email dal sito e quota di email nominative;
   - email RocketReach / ricerche RocketReach, per paese (Scartati + Prospect AI hanno la colonna Paese);
   - % di nuovi candidati per tema (scheda Temi).
-- ⏳ **Decidere l'attivazione automatica** (06:00 e 18:00) dopo la verifica.
+- ✅ Attivazione automatica (06:00 e 18:00) dal 9 ottobre 2026.
 
 ## Fase 4: Più prospect al giorno ⏳
 
